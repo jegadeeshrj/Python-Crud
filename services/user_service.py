@@ -10,9 +10,7 @@ collection = db.users
 def get_all_users():
     users = []
     for user in collection.find():
-
         users.append(User(**user))
-
     return users
 
 
